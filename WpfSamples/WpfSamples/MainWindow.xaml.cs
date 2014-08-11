@@ -2,7 +2,7 @@
 {
     using System.Windows;
 
-    using WpfCommon.Model;
+    using WpfCommon.ModelBase;
 
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -26,7 +26,10 @@
         #endregion
     }
 
-    public class DemoViewModel : ViewModelBase
+    /// <summary>
+    /// The demo view model.
+    /// </summary>
+    public class DemoViewModel : ModelBase
     {
         #region Fields
 
