@@ -1,1 +1,7 @@
 # git ignore file
+/WpfSamples/WpfCommon/obj/
+/WpfSamples/WpfCommon/bin/
+/WpfSamples/WpfSamples/obj/
+/WpfSamples/WpfSamples/bin/
+/WpfSamples/*.suo
+*.csproj.user
