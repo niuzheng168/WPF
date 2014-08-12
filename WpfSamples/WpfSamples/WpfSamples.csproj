@@ -76,12 +76,14 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="DummyData\DebugDummyData.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MainWindowViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -129,6 +131,10 @@
     <ProjectReference Include="..\WpfCommon\WpfCommon.csproj">
       <Project>{91ace1a2-c089-465a-9f92-47abc603136d}</Project>
       <Name>WpfCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WpfSamples.Controls\WpfSamples.Controls.csproj">
+      <Project>{77bde63c-999d-4a15-9946-c64cd724cda4}</Project>
+      <Name>WpfSamples.Controls</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -4,6 +4,9 @@
 
     using WpfCommon.ModelBase;
 
+    using WpfSamples.Controls.ViewModels;
+    using WpfSamples.DummyData;
+
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>

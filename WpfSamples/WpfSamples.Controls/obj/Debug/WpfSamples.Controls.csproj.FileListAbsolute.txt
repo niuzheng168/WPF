@@ -1,0 +1,14 @@
+E:\GitHub\WPF\WpfSamples\WpfSamples.Controls\obj\Debug\WpfSamples.Controls.csprojResolveAssemblyReference.cache
+E:\GitHub\WPF\WpfSamples\WpfSamples.Controls\obj\Debug\UserControls\EnumRadioButtonGroup.baml
+E:\GitHub\WPF\WpfSamples\WpfSamples.Controls\obj\Debug\UserControls\EnumRadioButtonGroup.g.cs
+E:\GitHub\WPF\WpfSamples\WpfSamples.Controls\obj\Debug\WpfSamples.Controls_MarkupCompile.cache
+E:\GitHub\WPF\WpfSamples\WpfSamples.Controls\obj\Debug\WpfSamples.Controls.g.resources
+E:\GitHub\WPF\WpfSamples\WpfSamples.Controls\bin\Debug\WpfSamples.Controls.dll
+E:\GitHub\WPF\WpfSamples\WpfSamples.Controls\bin\Debug\WpfSamples.Controls.pdb
+E:\GitHub\WPF\WpfSamples\WpfSamples.Controls\bin\Debug\WpfCommon.dll
+E:\GitHub\WPF\WpfSamples\WpfSamples.Controls\bin\Debug\WpfCommon.pdb
+E:\GitHub\WPF\WpfSamples\WpfSamples.Controls\obj\Debug\WpfSamples.Controls.dll
+E:\GitHub\WPF\WpfSamples\WpfSamples.Controls\obj\Debug\WpfSamples.Controls.pdb
+E:\GitHub\WPF\WpfSamples\WpfSamples.Controls\bin\Debug\Largeniu.DoNetCommon.dll
+E:\GitHub\WPF\WpfSamples\WpfSamples.Controls\bin\Debug\Largeniu.DoNetCommon.pdb
+E:\GitHub\WPF\WpfSamples\WpfSamples.Controls\obj\Debug\Assets\Converters.baml
