@@ -17,7 +17,7 @@
             new EnumRadioButtonGroupViewModel<DebugDummyData.DummyEnum>();
 
         /// <summary>
-        /// Gets or sets the dummy. 
+        /// Gets or sets the dummy.
         /// </summary>
         public EnumRadioButtonGroupViewModel<DebugDummyData.DummyEnum> Dummy
         {
