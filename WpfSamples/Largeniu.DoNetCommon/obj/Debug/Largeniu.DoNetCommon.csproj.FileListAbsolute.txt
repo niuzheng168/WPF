@@ -1,4 +1,0 @@
-E:\GitHub\WPF\WpfSamples\Largeniu.DoNetCommon\bin\Debug\Largeniu.DoNetCommon.dll
-E:\GitHub\WPF\WpfSamples\Largeniu.DoNetCommon\bin\Debug\Largeniu.DoNetCommon.pdb
-E:\GitHub\WPF\WpfSamples\Largeniu.DoNetCommon\obj\Debug\Largeniu.DoNetCommon.dll
-E:\GitHub\WPF\WpfSamples\Largeniu.DoNetCommon\obj\Debug\Largeniu.DoNetCommon.pdb

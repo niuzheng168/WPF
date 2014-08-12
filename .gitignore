@@ -3,5 +3,9 @@
 /WpfSamples/WpfCommon/bin/
 /WpfSamples/WpfSamples/obj/
 /WpfSamples/WpfSamples/bin/
+/WpfSamples/Largeniu.DoNetCommon/obj/
+/WpfSamples/Largeniu.DoNetCommon/bin/
+/WpfSamples/WpfSamples.Controls/obj/
+/WpfSamples/WpfSamples.Controls/bin/
 /WpfSamples/*.suo
 *.csproj.user
