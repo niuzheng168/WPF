@@ -12,22 +12,42 @@
     public partial class EnumRadioButtonGroup : UserControl, IView
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="EnumRadioButtonGroup"/> class.
+        ///     Initializes a new instance of the <see cref="EnumRadioButtonGroup" /> class.
         /// </summary>
         public EnumRadioButtonGroup()
         {
             this.InitializeComponent();
         }
 
-        public Orientation ButtonListOrientation 
+        /// <summary>
+        /// Gets or sets the button list orientation.
+        /// </summary>
+        public Orientation ButtonListOrientation
         {
-            get { return (Orientation)GetValue(ButtonListOrientationProperty); }
-            set { SetValue(ButtonListOrientationProperty, value); }
+            get
+            {
+                return (Orientation)this.GetValue(ButtonListOrientationProperty);
+            }
+
+            set
+            {
+                this.SetValue(ButtonListOrientationProperty, value);
+            }
         }
 
+        /// <summary>
+        /// The button list orientation property.
+        /// </summary>
         public static readonly DependencyProperty ButtonListOrientationProperty =
-            DependencyProperty.Register("ButtonListOrientation", typeof(Orientation), typeof(EnumRadioButtonGroup), new PropertyMetadata((System.Windows.Controls.Orientation)(Orientation.Horizontal)));
+            DependencyProperty.Register(
+                "ButtonListOrientation", 
+                typeof(Orientation), 
+                typeof(EnumRadioButtonGroup), 
+                new PropertyMetadata(Orientation.Horizontal));
 
+        /// <summary>
+        /// Gets or sets the view model.
+        /// </summary>
         public ViewModelBase ViewModel { get; set; }
     }
 }
