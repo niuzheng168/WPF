@@ -19,7 +19,7 @@
             this.InitializeComponent();
         }
 
-        public Orientation ButtonListOrientation
+        public Orientation ButtonListOrientation 
         {
             get { return (Orientation)GetValue(ButtonListOrientationProperty); }
             set { SetValue(ButtonListOrientationProperty, value); }
