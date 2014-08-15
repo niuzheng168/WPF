@@ -69,9 +69,22 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Ribbon\RibbonWindow.xaml.cs">
+    <Compile Include="Controls\EnumRadioButtonGroup.xaml.cs">
+      <DependentUpon>EnumRadioButtonGroup.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ImageButton.cs" />
+    <Compile Include="Controls\ViewModels\EnumRadioButtonGroupViewModel.cs" />
+    <Compile Include="Windows\Ribbon\RibbonWindow.xaml.cs">
       <DependentUpon>RibbonWindow.xaml</DependentUpon>
     </Compile>
+    <Page Include="Assets\Converters.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\EnumRadioButtonGroup.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -85,11 +98,15 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Ribbon\RibbonWindow.xaml">
+    <Page Include="Windows\Ribbon\RibbonWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Style\RibbonStyle.xaml">
+    <Page Include="Assets\ButtonStyles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Assets\RibbonStyle.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -148,69 +165,66 @@
       <Project>{91ace1a2-c089-465a-9f92-47abc603136d}</Project>
       <Name>WpfCommon</Name>
     </ProjectReference>
-    <ProjectReference Include="..\WpfSamples.Controls\WpfSamples.Controls.csproj">
-      <Project>{77bde63c-999d-4a15-9946-c64cd724cda4}</Project>
-      <Name>WpfSamples.Controls</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Ribbon\Icons\download.png">
+    <Resource Include="Windows\Ribbon\Icons\download.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Ribbon\Icons\home.png">
+    <Resource Include="Windows\Ribbon\Icons\home.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Ribbon\Icons\NewPrompt.png">
+    <Resource Include="Windows\Ribbon\Icons\NewPrompt.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Ribbon\Icons\OpenFile.png">
+    <Resource Include="Windows\Ribbon\Icons\OpenFile.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Ribbon\Icons\plaintext.png">
+    <Resource Include="Windows\Ribbon\Icons\plaintext.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Ribbon\Icons\plaintextIssue.png">
+    <Resource Include="Windows\Ribbon\Icons\plaintextIssue.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Ribbon\Icons\play.png">
+    <Resource Include="Windows\Ribbon\Icons\play.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Ribbon\Icons\prosodypitch.png">
+    <Resource Include="Windows\Ribbon\Icons\prosodypitch.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Ribbon\Icons\prosodyrate.png">
+    <Resource Include="Windows\Ribbon\Icons\prosodyrate.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Ribbon\Icons\prosodyvolume.png">
+    <Resource Include="Windows\Ribbon\Icons\prosodyvolume.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Ribbon\Icons\redo.png">
+    <Resource Include="Windows\Ribbon\Icons\redo.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Ribbon\Icons\save.png">
+    <Resource Include="Windows\Ribbon\Icons\save.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Ribbon\Icons\saveas.png">
+    <Resource Include="Windows\Ribbon\Icons\saveas.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Ribbon\Icons\saveWave.png">
+    <Resource Include="Windows\Ribbon\Icons\saveWave.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Ribbon\Icons\stop.png">
+    <Resource Include="Windows\Ribbon\Icons\stop.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Ribbon\Icons\undo.png">
+    <Resource Include="Windows\Ribbon\Icons\undo.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Ribbon\Icons\wave.jpg">
+    <Resource Include="Windows\Ribbon\Icons\wave.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Ribbon\Icons\sample.png">
+    <Resource Include="Windows\Ribbon\Icons\sample.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

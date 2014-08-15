@@ -1,13 +1,13 @@
 ﻿<Window x:Class="WpfSamples.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:controls="clr-namespace:WpfSamples.Controls.UserControls;assembly=WpfSamples.Controls"
         xmlns:w="clr-namespace:WpfSamples"
+        xmlns:controls="clr-namespace:WpfSamples.Controls"
         Title="MainWindow" Height="350" Width="525">
     <Window.DataContext>
         <w:MainWindowViewModel/>
     </Window.DataContext>
     <Grid>
-        <controls:EnumRadioButtonGroup ButtonListOrientation="Horizontal" DataContext="{Binding Path=Dummy}"></controls:EnumRadioButtonGroup>
+
     </Grid>
 </Window>

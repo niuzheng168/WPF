@@ -20,6 +20,9 @@ namespace WpfSamples.DummyData
 
             [Description("This is enum item 2")]
             EnumItems2 = 2,
+
+            [Description("Hello World!!!")]
+            EnumItems3 = 3,
         }
     }
 }

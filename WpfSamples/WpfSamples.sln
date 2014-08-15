@@ -1,13 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfSamples", "WpfSamples\WpfSamples.csproj", "{E989FD70-0125-48CB-8664-1C44D1C38727}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfCommon", "WpfCommon\WpfCommon.csproj", "{91ACE1A2-C089-465A-9F92-47ABC603136D}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfSamples.Controls", "WpfSamples.Controls\WpfSamples.Controls.csproj", "{77BDE63C-999D-4A15-9946-C64CD724CDA4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Largeniu.DoNetCommon", "Largeniu.DoNetCommon\Largeniu.DoNetCommon.csproj", "{16BC26DE-9CC2-4B1D-8B73-D99605C0D6A0}"
 EndProject
@@ -25,10 +23,6 @@ Global
 		{91ACE1A2-C089-465A-9F92-47ABC603136D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{91ACE1A2-C089-465A-9F92-47ABC603136D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{91ACE1A2-C089-465A-9F92-47ABC603136D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{77BDE63C-999D-4A15-9946-C64CD724CDA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{77BDE63C-999D-4A15-9946-C64CD724CDA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{77BDE63C-999D-4A15-9946-C64CD724CDA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{77BDE63C-999D-4A15-9946-C64CD724CDA4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{16BC26DE-9CC2-4B1D-8B73-D99605C0D6A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{16BC26DE-9CC2-4B1D-8B73-D99605C0D6A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16BC26DE-9CC2-4B1D-8B73-D99605C0D6A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
