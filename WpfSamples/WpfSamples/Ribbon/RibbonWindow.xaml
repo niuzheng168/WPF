@@ -1,0 +1,98 @@
+﻿<Window x:Class="WpfSamples.Ribbon.RibbonWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="RibbonWindow" Height="583" Width="832">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="../Style/RibbonStyle.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Ribbon Grid.Row="0" Background="Transparent" BorderBrush="Gray">
+            <Ribbon.QuickAccessToolBar>
+                <RibbonQuickAccessToolBar>
+                    <RibbonButton SmallImageSource="Icons/save.png"></RibbonButton>
+                    <RibbonSplitButton SmallImageSource="Icons/undo.png"></RibbonSplitButton>
+                    <RibbonSplitButton SmallImageSource="Icons/redo.png"></RibbonSplitButton>
+                </RibbonQuickAccessToolBar>
+            </Ribbon.QuickAccessToolBar>
+            <Ribbon.ApplicationMenu>
+                <RibbonApplicationMenu Visibility="Collapsed" />
+            </Ribbon.ApplicationMenu>
+
+            <RibbonTab Header="FILE" HeaderStyle="{StaticResource RibbonHeaderMetroStyle}" IsSelected="True">
+                <RibbonGroup Header="TTS" Style="{StaticResource RibbonGroupHeaderStyle}">
+                    <RibbonButton Style="{StaticResource RibbonButtonMetroStyle}" LargeImageSource="Icons/home.png"
+                                  Label="Load Voice" />
+                </RibbonGroup>
+
+                <RibbonGroup Header="Tuning Prompts" Style="{StaticResource RibbonGroupHeaderStyle}">
+                    <RibbonMenuButton Label="Open File" LargeImageSource="Icons/OpenFile.png"
+                                      Style="{StaticResource RibbonMenuButtonMetroStyle}">
+                        <RibbonMenuItem ImageSource="Icons/sample.png" Header="Plain Text Format" Style="{StaticResource RibbonMenuItemButtonMetroStyle}" />
+                        <RibbonMenuItem ImageSource="Icons/sample.png" Header="Ssml Format" Style="{StaticResource RibbonMenuItemButtonMetroStyle}" />
+                    </RibbonMenuButton>
+                    <RibbonMenuButton Label="New Prompt" LargeImageSource="Icons/NewPrompt.png"
+                                      Style="{StaticResource RibbonMenuButtonMetroStyle}">
+                        <RibbonMenuItem ImageSource="Icons/sample.png" Header="Plain Text Format"
+                                        Style="{StaticResource RibbonMenuItemButtonMetroStyle}" />
+                        <RibbonMenuItem ImageSource="Icons/sample.png" Header="Ssml Format"
+                                        Style="{StaticResource RibbonMenuItemButtonMetroStyle}" />
+                    </RibbonMenuButton>
+                    <RibbonButton SmallImageSource="Icons/save.png" Label="Save"
+                                  Style="{StaticResource RibbonButtonMetroStyle}" />
+                    <RibbonButton SmallImageSource="Icons/saveas.png" Label="Save As"
+                                  Style="{StaticResource RibbonButtonMetroStyle}" />
+                </RibbonGroup>
+
+                <RibbonGroup Header="Export" Style="{StaticResource RibbonGroupHeaderStyle}">
+                    <RibbonButton LargeImageSource="Icons/wave.jpg" Label="Wave"
+                                  Style="{StaticResource RibbonButtonMetroStyle}" />
+                    <RibbonButton LargeImageSource="Icons/plaintext.png" Label="Plain Text"
+                                  Style="{StaticResource RibbonButtonMetroStyle}" />
+                </RibbonGroup>
+            </RibbonTab>
+
+            <RibbonTab Header="TUNE" HeaderStyle="{StaticResource RibbonHeaderMetroStyle}" IsSelected="True">
+                <RibbonGroup Header="Wave" Style="{StaticResource RibbonGroupHeaderStyle}">
+                    <RibbonButton LargeImageSource="Icons/play.png" Label="Play"
+                                  Style="{StaticResource RibbonButtonMetroStyle}" />
+                    <RibbonButton LargeImageSource="Icons/stop.png" Label="Stop"
+                                  Style="{StaticResource RibbonButtonMetroStyle}" />
+                    <RibbonButton LargeImageSource="Icons/download.png" Label="Save"
+                                  Style="{StaticResource RibbonButtonMetroStyle}" />
+                </RibbonGroup>
+
+                <RibbonGroup Header="Issues" Style="{StaticResource RibbonGroupHeaderStyle}">
+                    <RibbonButton LargeImageSource="Icons/sample.png" Label="Pronunciation"
+                                  Style="{StaticResource RibbonButtonMetroStyle}" />
+                    <RibbonButton LargeImageSource="Icons/sample.png" Label="Break"
+                                  Style="{StaticResource RibbonButtonMetroStyle}" />
+                    <RibbonButton LargeImageSource="Icons/sample.png" Label="Inotations"
+                                  Style="{StaticResource RibbonButtonMetroStyle}" />
+                    <RibbonButton LargeImageSource="Icons/sample.png" Label="Emphasis"
+                                  Style="{StaticResource RibbonButtonMetroStyle}" />
+                    <RibbonButton SmallImageSource="Icons/prosodypitch.png" Label="Prosody Pitch"
+                                  Style="{StaticResource RibbonButtonMetroStyle}" />
+                    <RibbonButton SmallImageSource="Icons/prosodyrate.png" Label="Prosody Rate"
+                                  Style="{StaticResource RibbonButtonMetroStyle}" />
+                    <RibbonButton SmallImageSource="Icons/prosodyvolume.png" Label="Prosody Volume"
+                                  Style="{StaticResource RibbonButtonMetroStyle}" />
+                </RibbonGroup>
+
+                <RibbonGroup Header="Text" Style="{StaticResource RibbonGroupHeaderStyle}">
+                    <RibbonButton LargeImageSource="Icons/plaintextIssue.png" Label="Edit"
+                                  Style="{StaticResource RibbonButtonMetroStyle}" />
+                </RibbonGroup>
+
+            </RibbonTab>
+        </Ribbon>
+    </Grid>
+</Window>
