@@ -1,11 +1,11 @@
-﻿<Window x:Class="WpfSamples.Ribbon.RibbonWindow"
+﻿<Window x:Class="WpfSamples.Windows.Ribbon.RibbonWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="RibbonWindow" Height="583" Width="832">
     <Window.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="../Style/RibbonStyle.xaml" />
+                <ResourceDictionary Source="../../Assets/RibbonStyle.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Window.Resources>
@@ -60,7 +60,7 @@
                 </RibbonGroup>
             </RibbonTab>
 
-            <RibbonTab Header="TUNE" HeaderStyle="{StaticResource RibbonHeaderMetroStyle}" IsSelected="True">
+            <RibbonTab Header="TUNE" HeaderStyle="{StaticResource RibbonHeaderMetroStyle}" IsSelected="False">
                 <RibbonGroup Header="Wave" Style="{StaticResource RibbonGroupHeaderStyle}">
                     <RibbonButton LargeImageSource="Icons/play.png" Label="Play"
                                   Style="{StaticResource RibbonButtonMetroStyle}" />
