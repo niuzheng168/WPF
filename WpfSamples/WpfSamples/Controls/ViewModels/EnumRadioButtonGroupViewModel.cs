@@ -67,7 +67,7 @@
         /// </summary>
         public EnumRadioButtonGroupViewModel()
         {
-            var enumArray = Helpers.ConvertEnumToArray<T>();
+            var enumArray = EnumHelper.ConvertEnumToArray<T>();
             foreach (T enumValue in enumArray)
             {
                 EnumRadioButtonViewModel<T> button = new EnumRadioButtonViewModel<T>(enumValue);
@@ -143,7 +143,7 @@
         public EnumRadioButtonViewModel(T enumValue)
         {
             this.EnumValue = enumValue;
-            this.DisplayText = Helpers.GetEnumDescription(enumValue);
+            this.DisplayText = EnumHelper.GetEnumDescription(enumValue);
         }
 
         /// <summary>
